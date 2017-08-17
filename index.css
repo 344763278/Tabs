@@ -1,0 +1,35 @@
+body{
+  background-color: #444;
+}
+.wrap1, .wrap{
+  width: 400px;
+  height: 250px; 
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+.wrap1{
+  top: 100px;
+  left: 600px;
+}
+.input-box{ 
+  margin-bottom: 5px;
+}
+.input-box input{
+  width: 60px;
+  height: 30px;
+  font-size: 16px;
+}
+.show-box .show-item{
+  width: 400px;
+  height: 250px;
+  background-color: #666; 
+  display: none;  
+  position: absolute;
+}
+.show-box .show-item.show-a{
+  display: block;
+}
+.active{
+  background-color: #f60;
+} 
