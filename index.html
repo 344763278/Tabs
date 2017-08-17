@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+
+ 
+</head>
+<body> 
+	<div class="wrap">
+		<div class="input-box">
+			<input class="active" type="button" value="图片1">
+			<input type="button" value="图片2">
+			<input type="button" value="图片3">
+		</div>
+		<div class="show-box">
+			<div class="show-item show-a">
+				<img src="images/01.jpg" width="400" height="250">
+			</div>
+			<div class="show-item">
+				<img src="images/02.jpg" width="400" height="250">
+			</div>
+			<div class="show-item">
+				<img src="images/03.jpg" width="400" height="250">
+			</div>
+		</div>
+	</div>
+	<div class="wrap1">
+		<div class="input-box">
+			<input class="active" type="button" value="图片4">
+			<input type="button" value="图片5">
+			<input type="button" value="图片6">
+		</div>
+		<div class="show-box">
+			<div class="show-item show-a">
+				<img src="images/04.jpg" width="400" height="250">
+			</div>
+			<div class="show-item">
+				<img src="images/05.jpg" width="400" height="250">
+			</div>
+			<div class="show-item">
+				<img src="images/06.jpg" width="400" height="250">
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+	<script src="./tabs.js"></script>
+	<script>  
+
+		$(function(){
+			new Tabs('.wrap', {triggerType : 'mouseover', 
+				               effect      : 'fade', 
+				               speed 	   : 800, 
+				               auto        : 1000});
+
+			new Tabs('.wrap1', {speed : 0});
+		}); 
+	</script>
+</body>
+</html>
